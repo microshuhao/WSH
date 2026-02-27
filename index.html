@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WANG SHU HAO — Photography</title>
+  <meta name="description" content="Photography portfolio of WANG SHU HAO (WSH)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="topbar" id="top">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="WANG SHU HAO Home">
+        <!-- LOGO占位：放你的WSH logo 到 assets/img/logo-wsh.svg -->
+        <img class="brand__logo" src="assets/img/logo-wsh.svg" alt="WSH logo" />
+        <div class="brand__text">
+          <div class="brand__name">WANG SHU HAO</div>
+          <div class="brand__tag">Photography · Films</div>
+        </div>
+      </a>
+
+      <button class="navbtn" id="navbtn" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#projects">Projects</a>
+        <a href="#films">Films</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__media" role="img" aria-label="Hero image"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>WANG SHU HAO</h1>
+      <p class="hero__lead">Museum-grade quiet. Light, geometry, and time.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn--ghost" href="#films">Watch Films</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p>Series-based work. Open a project to view the full set.</p>
+      </div>
+
+      <div class="projgrid">
+        <a class="proj" href="projects/project-01.html" aria-label="Project 01">
+          <div class="proj__thumb">
+            <img src="assets/img/covers/cover-01.jpg" alt="Project 01 cover" loading="lazy" />
+          </div>
+          <div class="proj__meta">
+            <div class="proj__title">Project 01</div>
+            <div class="proj__desc">Short description of the series.</div>
+          </div>
+        </a>
+
+        <a class="proj" href="projects/project-02.html" aria-label="Project 02">
+          <div class="proj__thumb">
+            <img src="assets/img/covers/cover-02.jpg" alt="Project 02 cover" loading="lazy" />
+          </div>
+          <div class="proj__meta">
+            <div class="proj__title">Project 02</div>
+            <div class="proj__desc">Short description of the series.</div>
+          </div>
+        </a>
+
+        <a class="proj" href="projects/project-03.html" aria-label="Project 03">
+          <div class="proj__thumb">
+            <img src="assets/img/covers/cover-03.jpg" alt="Project 03 cover" loading="lazy" />
+          </div>
+          <div class="proj__meta">
+            <div class="proj__title">Project 03</div>
+            <div class="proj__desc">Short description of the series.</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Films -->
+    <section class="section" id="films">
+      <div class="section__head">
+        <h2>Films</h2>
+        <p>Local MP4 playback.</p>
+      </div>
+
+      <div class="filmgrid">
+        <article class="film" data-type="mp4" data-src="assets/video/film-01.mp4">
+          <div class="film__thumb">
+            <img src="assets/img/covers/cover-01.jpg" alt="Film 01 poster" loading="lazy" />
+            <div class="film__play">Play</div>
+          </div>
+          <div class="film__meta">
+            <div class="film__title">Film 01</div>
+            <div class="film__desc">MP4</div>
+          </div>
+        </article>
+
+        <article class="film" data-type="mp4" data-src="assets/video/film-02.mp4">
+          <div class="film__thumb">
+            <img src="assets/img/covers/cover-02.jpg" alt="Film 02 poster" loading="lazy" />
+            <div class="film__play">Play</div>
+          </div>
+          <div class="film__meta">
+            <div class="film__title">Film 02</div>
+            <div class="film__desc">MP4</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About (无联系方式) -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2>About</h2>
+        <p>Artist statement.</p>
+      </div>
+
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I photograph places where light shapes silence. The work is organised as projects,
+            each with its own internal rhythm and sequence.
+          </p>
+          <p>
+            This site keeps the presentation quiet: generous margins, restrained typography,
+            and gallery-first spacing.
+          </p>
+        </div>
+
+        <aside class="about__box">
+          <div class="about__boxTitle">Index</div>
+          <ul class="about__list">
+            <li><span>Works</span><span>·</span><span>Projects</span></li>
+            <li><span>Motion</span><span>·</span><span>Local MP4</span></li>
+            <li><span>Style</span><span>·</span><span>Ivory museum</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> WANG SHU HAO</div>
+    <a class="toTop" href="#top">Back to top</a>
+  </footer>
+
+  <!-- Photo Lightbox (project pages will use it too) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <img class="lightbox__img" id="lbImg" alt="Expanded photo" />
+  </div>
+
+  <!-- Film Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal__close" id="mClose" aria-label="Close">×</button>
+    <div class="modal__body" id="mBody"></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
