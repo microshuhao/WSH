@@ -296,6 +296,25 @@ img{ max-width:100%; display:block; }
   .filmgrid{ grid-template-columns: 1fr; }
 }
 
+.map{
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(255,255,255,.55);
+}
+
+.map__frame{
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 640px){
+  .map__frame{ height: 260px; }
+}
+
 .film{
   border:1px solid var(--line);
   background: rgba(255,255,255,.55);
@@ -487,6 +506,7 @@ img{ max-width:100%; display:block; }
   .nav a{ width:100%; }
 
 }
+
 
 
 
