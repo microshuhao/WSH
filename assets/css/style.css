@@ -124,18 +124,28 @@ img{ max-width:100%; display:block; }
   overflow:hidden;
   border-bottom: 1px solid var(--line);
 }
-.hero__media{
+.home .hero__media{
   position:absolute;
   inset:0;
-  background-image:url("../img/hero.jpg");
-  background-size:cover;
-  background-position:center;
-  transform: scale(1.03);
-  filter: saturate(.95) contrast(.98);
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* 针对这张图的弱化参数 */
+  opacity: 0.14;                    /* 比普通图更低 */
+  filter: blur(2px)                 /* 稍微模糊 */
+          saturate(.75)             /* 降低橙色饱和度 */
+          contrast(.85)             /* 压对比 */
+          brightness(1.05);         /* 略微提亮 */
 }
-.hero__overlay{
-  position:absolute; inset:0;
-  background: radial-gradient(70% 60% at 50% 35%, rgba(246,244,239,.15), rgba(246,244,239,.88));
+.home .hero__overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(80% 70% at 45% 35%,
+      rgba(246,244,239,.65),
+      rgba(246,244,239,.94)
+    );
 }
 .hero__content{
   position:relative;
@@ -475,4 +485,5 @@ img{ max-width:100%; display:block; }
   }
   .nav.is-open{ display:flex; }
   .nav a{ width:100%; }
+
 }
