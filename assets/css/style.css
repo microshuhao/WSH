@@ -132,7 +132,7 @@ img{ max-width:100%; display:block; }
   background-position: center;
 
   /* 针对这张图的弱化参数 */
-  opacity: 0.2;                    /* 比普通图更低 */
+  opacity: 2;                    /* 比普通图更低 */
   filter: blur(2px)                 /* 稍微模糊 */
           saturate(.75)             /* 降低橙色饱和度 */
           contrast(.85)             /* 压对比 */
@@ -487,4 +487,5 @@ img{ max-width:100%; display:block; }
   .nav a{ width:100%; }
 
 }
+
 
