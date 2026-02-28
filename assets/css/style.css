@@ -273,18 +273,24 @@ img{ max-width:100%; display:block; }
 }
 
 .grid{
-  column-count: 3;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
+
 @media (max-width: 1024px){
-  .grid{ column-count: 2; }
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 640px){
-  .grid{ column-count: 1; }
+  .grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 .card{
-  break-inside: avoid;
   margin: 0 0 14px 0;
   border-radius: var(--radius);
   overflow:hidden;
@@ -522,6 +528,7 @@ img{ max-width:100%; display:block; }
   .nav a{ width:100%; }
 
 }
+
 
 
 
